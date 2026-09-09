@@ -5,17 +5,3 @@ const db = window.supabase.createClient(
     SUPABASE_URL,
     SUPABASE_KEY
 );
-
-async function testDatabase() {
-    const { data, error } = await db
-        .from("recipes")
-        .select("*");
-
-    if (error) {
-        console.error("Supabase-feil:", error);
-    } else {
-        console.log("Oppskrifter fra Supabase:", data);
-    }
-}
-
-testDatabase();
