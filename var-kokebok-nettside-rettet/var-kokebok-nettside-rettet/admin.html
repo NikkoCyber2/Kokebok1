@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="no">
+
 <head>
   <meta charset="UTF-8" />
 
@@ -8,7 +9,7 @@
     content="width=device-width, initial-scale=1.0"
   />
 
-  <title>Legg til oppskrift | Vår Kokebok</title>
+  <title>Min side | Vår Kokebok</title>
 
   <link
     rel="icon"
@@ -48,117 +49,29 @@
         Vår Kokebok
       </p>
 
-      <h1>Legg til oppskrift</h1>
+      <h1>Min side</h1>
 
-      <form id="recipe-form">
+      <p id="user-info">
+        Du er logget inn.
+      </p>
 
-        <label for="title">
-          Navn på retten
-        </label>
+      <div class="admin-actions">
 
-        <input
-          type="text"
-          id="title"
-          required
-        />
+        <a
+          href="ny-oppskrift.html"
+          class="admin-action-button"
+        >
+          + Legg til oppskrift
+        </a>
 
-        <label for="description">
-          Beskrivelse
-        </label>
+        <a
+          href="oppskrifter.html?category=middag"
+          class="admin-action-button secondary"
+        >
+          Se oppskrifter
+        </a>
 
-        <textarea
-          id="description"
-          rows="3"
-          required
-        ></textarea>
-
-        <label for="category">
-          Kategori
-        </label>
-
-        <select id="category" required>
-          <option value="frokost">Frokost</option>
-          <option value="middag">Middag</option>
-          <option value="dessert">Dessert</option>
-        </select>
-
-        <div id="subcategory-container">
-
-          <label for="subcategory">
-            Type middag
-          </label>
-
-          <select id="subcategory">
-            <option value="fisk">Fisk</option>
-            <option value="kylling">Kylling</option>
-            <option value="svin">Svin</option>
-            <option value="biff">Biff</option>
-            <option value="vegetar">Vegetar</option>
-          </select>
-
-        </div>
-
-        <label for="duration">
-          Tid
-        </label>
-
-        <input
-          type="text"
-          id="duration"
-          placeholder="For eksempel 45 min"
-          required
-        />
-
-        <label for="servings">
-          Mengde
-        </label>
-
-        <input
-          type="text"
-          id="servings"
-          placeholder="For eksempel 4 personer"
-          required
-        />
-
-        <label for="difficulty">
-          Vanskelighetsgrad
-        </label>
-
-        <select id="difficulty" required>
-          <option value="Enkel">Enkel</option>
-          <option value="Middels">Middels</option>
-          <option value="Vanskelig">Vanskelig</option>
-        </select>
-
-        <label for="ingredients">
-          Ingredienser
-        </label>
-
-        <textarea
-          id="ingredients"
-          rows="8"
-          placeholder="Én ingrediens per linje"
-          required
-        ></textarea>
-
-        <label for="steps">
-          Fremgangsmåte
-        </label>
-
-        <textarea
-          id="steps"
-          rows="8"
-          placeholder="Ett steg per linje"
-          required
-        ></textarea>
-
-        <button type="submit">
-          Lagre oppskrift
-        </button>
-
-        <p id="form-message"></p>
-
-      </form>
+      </div>
 
     </section>
 
@@ -166,7 +79,8 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="supabase.js"></script>
-  <script src="admin.js"></script>
+  <script src="admin-dashboard.js"></script>
 
 </body>
+
 </html>
