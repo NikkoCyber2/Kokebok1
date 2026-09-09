@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Oppskrifter fra Vår Kokebok." />
+    <title>Oppskrifter | Vår Kokebok</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="recipes-page">
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Vår Kokebok – forsiden">
+        <span>Vår Kokebok</span>
+        <svg viewBox="0 0 56 32" aria-hidden="true">
+          <path
+            d="M3 26C18 25 27 15 31 4M19 19c-8-1-11-6-12-10 7 0 11 3 12 10Zm8-7c-2-6 0-10 4-12 3 5 2 9-4 12Zm2 5c7-3 12-1 15 2-5 4-10 3-15-2Z"
+          />
+          <circle cx="44" cy="8" r="2.2" />
+          <circle cx="49" cy="12" r="2.2" />
+          <circle cx="42" cy="14" r="2.2" />
+        </svg>
+      </a>
+      <nav class="desktop-nav" aria-label="Hovedmeny">
+        <a href="oppskrifter.html?category=frokost">Frokost</a>
+        <span aria-hidden="true">•</span>
+        <a href="oppskrifter.html?category=middag">Middag</a>
+        <span aria-hidden="true">•</span>
+        <a href="oppskrifter.html?category=dessert">Dessert</a>
+      </nav>
+      <button class="menu-button" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav" aria-hidden="true">
+      <a href="oppskrifter.html?category=frokost">Frokost</a>
+      <a href="oppskrifter.html?category=middag">Middag</a>
+      <a href="oppskrifter.html?category=dessert">Dessert</a>
+    </div>
+
+    <main class="recipe-main">
+      <section class="recipe-hero">
+        <a href="index.html" class="back-link">← Tilbake til forsiden</a>
+        <p class="eyebrow">Vår samling</p>
+        <h1 id="page-title">Oppskrifter</h1>
+        <p id="page-description">Finn en rett som passer dagen.</p>
+      </section>
+
+      <section class="recipe-browser">
+        <div class="main-tabs" aria-label="Velg måltid">
+          <button data-category="frokost">Frokost</button>
+          <button data-category="middag">Middag</button>
+          <button data-category="dessert">Dessert</button>
+        </div>
+
+        <div
+          class="subfilters"
+          id="subfilters"
+          aria-label="Filtrer middagsoppskrifter"
+        >
+          <button data-filter="alle">Alle</button>
+          <button data-filter="fisk">Fisk</button>
+          <button data-filter="kylling">Kylling</button>
+          <button data-filter="svin">Svin</button>
+          <button data-filter="biff">Biff</button>
+          <button data-filter="vegetar">Vegetar</button>
+        </div>
+
+        <div class="recipe-grid" id="recipe-grid"></div>
+        <p class="empty-message" id="empty-message" hidden>
+          Ingen oppskrifter i denne kategorien ennå.
+        </p>
+      </section>
+    </main>
+
+    <div class="modal" id="recipe-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article
+        class="modal-card"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+      >
+        <button
+          class="modal-close"
+          aria-label="Lukk oppskrift"
+          data-close-modal
+        >
+          ×
+        </button>
+        <p class="modal-kicker" id="modal-kicker"></p>
+        <h2 id="modal-title"></h2>
+        <p class="modal-description" id="modal-description"></p>
+        <div class="modal-meta" id="modal-meta"></div>
+        <div class="modal-columns">
+          <section>
+            <h3>Ingredienser</h3>
+            <ul id="modal-ingredients"></ul>
+          </section>
+          <section>
+            <h3>Slik gjør du</h3>
+            <ol id="modal-steps"></ol>
+          </section>
+        </div>
+      </article>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-label">
+        <span>Laget av Lykke 04/08/2026</span>
+        <b>♥</b>
+      </div>
+      <p>Vår Kokebok</p>
+    </footer>
+
+    <script src="recipes.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

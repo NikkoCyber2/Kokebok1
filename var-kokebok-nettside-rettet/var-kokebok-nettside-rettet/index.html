@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="no">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Vår Kokebok – favorittoppskrifter samlet på ett sted."
+    />
+    <title>Vår Kokebok</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Vår Kokebok – forsiden">
+        <span>Vår Kokebok</span>
+        <svg viewBox="0 0 56 32" aria-hidden="true">
+          <path
+            d="M3 26C18 25 27 15 31 4M19 19c-8-1-11-6-12-10 7 0 11 3 12 10Zm8-7c-2-6 0-10 4-12 3 5 2 9-4 12Zm2 5c7-3 12-1 15 2-5 4-10 3-15-2Z"
+          />
+          <circle cx="44" cy="8" r="2.2" />
+          <circle cx="49" cy="12" r="2.2" />
+          <circle cx="42" cy="14" r="2.2" />
+        </svg>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Hovedmeny">
+        <a href="oppskrifter.html?category=frokost">Frokost</a>
+        <span aria-hidden="true">•</span>
+        <a href="oppskrifter.html?category=middag">Middag</a>
+        <span aria-hidden="true">•</span>
+        <a href="oppskrifter.html?category=dessert">Dessert</a>
+      </nav>
+
+      <button class="menu-button" aria-label="Åpne meny" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <div class="mobile-nav" aria-hidden="true">
+      <a href="oppskrifter.html?category=frokost">Frokost</a>
+      <a href="oppskrifter.html?category=middag">Middag</a>
+      <a href="oppskrifter.html?category=dessert">Dessert</a>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow"></p>
+          <h1><span>Velkommen</span><br />Til vår kokebok</h1>
+
+          <div class="ornament" aria-hidden="true"><i></i><b>♥</b><i></i></div>
+
+          <p class="intro">Hos oss finner du en enkel og fin kokebok med favorittoppskrifter fra hele verden.</p>
+
+          <a class="primary-button" href="#kategorier"
+            >Bla gjennom oppskrifter</a
+          >
+        </div>
+
+        <div class="hero-illustration">
+          <img
+            src="./assets/hero-kjokken.png"
+            alt="Skandinavisk kjøkken med blomster, trefjøl og kobberkjeler"
+          />
+        </div>
+      </section>
+
+      <section class="categories-section" id="kategorier">
+        <div class="section-heading">
+          <span class="small-flower" aria-hidden="true">✤</span>
+          <p>Finn noe som frister</p>
+          <h2>Hva har dere lyst på?</h2>
+        </div>
+
+        <div class="category-grid">
+          <a class="category-card" href="oppskrifter.html?category=frokost">
+            <div class="card-art breakfast-art" aria-hidden="true">
+              <svg viewBox="0 0 250 160">
+                <ellipse
+                  cx="104"
+                  cy="113"
+                  rx="72"
+                  ry="23"
+                  fill="#f8f4e9"
+                  stroke="#7d9bb1"
+                  stroke-width="3"
+                />
+                <path
+                  d="M49 72h109l-10 43H59Z"
+                  fill="#f4efe2"
+                  stroke="#7d9bb1"
+                  stroke-width="3"
+                />
+                <path
+                  d="M57 80c28 11 62 11 94 0"
+                  fill="none"
+                  stroke="#7d9bb1"
+                  stroke-width="3"
+                />
+                <g fill="#6d87a0">
+                  <circle cx="75" cy="88" r="7" />
+                  <circle cx="119" cy="92" r="7" />
+                </g>
+                <g fill="#c8777b">
+                  <circle cx="94" cy="84" r="8" />
+                  <circle cx="137" cy="87" r="8" />
+                </g>
+                <path
+                  d="M178 70h34v42h-34Z"
+                  fill="#f7f2e8"
+                  stroke="#7d9bb1"
+                  stroke-width="3"
+                />
+                <path
+                  d="M212 78c21-2 21 28 0 26"
+                  fill="none"
+                  stroke="#7d9bb1"
+                  stroke-width="4"
+                />
+              </svg>
+            </div>
+            <p class="script-title">Frokost</p>
+            <p>Tekst her"</p>
+            <span>Se oppskrifter <b>→</b></span>
+          </a>
+
+          <a class="category-card" href="oppskrifter.html?category=middag">
+            <div class="card-art dinner-art" aria-hidden="true">
+              <svg viewBox="0 0 250 160">
+                <ellipse
+                  cx="125"
+                  cy="110"
+                  rx="91"
+                  ry="37"
+                  fill="#f8f4e9"
+                  stroke="#7d9bb1"
+                  stroke-width="3"
+                />
+                <ellipse
+                  cx="125"
+                  cy="105"
+                  rx="69"
+                  ry="26"
+                  fill="#fffdf7"
+                  stroke="#b8cbd6"
+                  stroke-width="3"
+                />
+                <path
+                  d="M78 104c25-32 70-35 96-4-22 26-70 30-96 4Z"
+                  fill="#d89972"
+                  stroke="#a46f52"
+                  stroke-width="3"
+                />
+                <path
+                  d="M99 90c15 8 28 10 48 8M105 106c14 5 27 6 42 2"
+                  fill="none"
+                  stroke="#f5d2b5"
+                  stroke-width="3"
+                />
+                <g fill="#91a57d">
+                  <circle cx="74" cy="89" r="7" />
+                  <circle cx="181" cy="109" r="7" />
+                  <circle cx="170" cy="83" r="5" />
+                </g>
+              </svg>
+            </div>
+            <p class="script-title">Middag</p>
+            <p>Tekst her"</p>
+            <span>Se oppskrifter <b>→</b></span>
+          </a>
+
+          <a class="category-card" href="oppskrifter.html?category=dessert">
+            <div class="card-art dessert-art" aria-hidden="true">
+              <svg viewBox="0 0 250 160">
+                <ellipse
+                  cx="125"
+                  cy="122"
+                  rx="76"
+                  ry="19"
+                  fill="#f8f4e9"
+                  stroke="#7d9bb1"
+                  stroke-width="3"
+                />
+                <path
+                  d="M77 112 98 50h64l19 62Z"
+                  fill="#f4e5cf"
+                  stroke="#a88e72"
+                  stroke-width="3"
+                />
+                <path
+                  d="M91 72h78M84 94h91"
+                  stroke="#cf8d92"
+                  stroke-width="12"
+                />
+                <path
+                  d="M101 50c10-21 41-24 56 0"
+                  fill="#fffaf0"
+                  stroke="#a88e72"
+                  stroke-width="3"
+                />
+                <g fill="#bd5f67">
+                  <circle cx="115" cy="45" r="8" />
+                  <circle cx="144" cy="43" r="8" />
+                </g>
+              </svg>
+            </div>
+            <p class="script-title">Dessert</p>
+            <p>Tekst her"</p>
+            <span>Se oppskrifter <b>→</b></span>
+          </a>
+        </div>
+
+        <div class="values-strip">
+          <div>
+            <span class="value-icon">❀</span>
+            <p><strong>Tekst her</strong> Tekst her</p>
+          </div>
+          <div>
+            <span class="value-icon">⌂</span>
+            <p><strong>Tekst her</strong>Tekst her</p>
+          </div>
+          <div>
+            <span class="value-icon">♧</span>
+            <p><strong>Tekst her</strong>Tekst her</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-label">
+        <b>♥</b>
+        <span>Laget av Lykke - 04/08/26</span>
+        <b>♥</b>
+      </div>
+      <p>Vår Kokebok</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
